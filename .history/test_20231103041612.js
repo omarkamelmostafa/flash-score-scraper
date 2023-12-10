@@ -1,0 +1,33 @@
+function calculateMinMaxValueAndAverage(array) {
+  // Convert all of the elements in the array to numbers.
+  const numericArray = array.map((item) => {
+    if (typeof item === "string") {
+      return parseFloat(item);
+    } else {
+      return item;
+    }
+  });
+
+  // Calculate the minimum, maximum, and average of the numeric array.
+  const min = Math.min(...numericArray);
+  const max = Math.max(...numericArray);
+  const average = (
+    numericArray.reduce((sum, current) => sum + current) / numericArray.length
+  ).toFixed(2);
+
+  // Return the minimum, maximum, and average.
+  return { min, max, average };
+}
+const { min, average, max } = calculateMinMaxValueAndAverage(floatArray);
+
+const percentageArray = ["59%", "29%", "44%"];
+
+const stringArray = ["13", "10", "5"];
+
+const floatArray = ["1.48", "0.66", "0.92"];
+
+const { min, average, max } = calculateMinMaxValueAndAverage(percentageArray);
+// const { min, average, max } = calculateMinMaxValueAndAverage(stringArray);
+// const { min, average, max } = calculateMinMaxValueAndAverage(floatArray);
+
+console.log(min, average, max);
