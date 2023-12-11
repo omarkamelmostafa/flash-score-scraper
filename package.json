@@ -1,0 +1,35 @@
+{
+  "author": "Omar Kamel Mostafa",
+  "dependencies": {
+    "axios": "^1.5.1",
+    "body-parser": "^1.20.2",
+    "bson": "^6.2.0",
+    "exceljs": "^4.3.0",
+    "express": "^4.18.2",
+    "mongodb": "^6.1.0",
+    "mongoose": "^7.6.3",
+    "puppeteer": "^21.3.8",
+    "rand-user-agent": "^2.0.34"
+  },
+  "description": "A Node.js scraper for Flashscore football data.",
+  "devDependencies": {
+    "chalk": "^5.3.0",
+    "nodemon": "^3.0.1"
+  },
+  "keywords": [
+    "flashscore",
+    "scraper",
+    "football",
+    "data",
+    "web-scraping",
+    "puppeteer"
+  ],
+  "license": "MIT",
+  "main": "app.js",
+  "name": "flashscore-scraper",
+  "scripts": {
+    "server": "nodemon server.js"
+  },
+  "type": "module",
+  "version": "1.0.0"
+}
